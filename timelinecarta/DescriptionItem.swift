@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+//create an array of content that wil fill the table view cells
+
 class descriptionItem: NSObject {
     var date: String = ""
     var title: String = ""
