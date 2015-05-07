@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5EF73AD41AF161190058902D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF73AD31AF161190058902D /* AppDelegate.swift */; };
-		5EF73AD61AF161190058902D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF73AD51AF161190058902D /* ViewController.swift */; };
 		5EF73AD91AF161190058902D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF73AD71AF161190058902D /* Main.storyboard */; };
 		5EF73ADB1AF161190058902D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF73ADA1AF161190058902D /* Images.xcassets */; };
 		5EF73ADE1AF161190058902D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EF73ADC1AF161190058902D /* LaunchScreen.xib */; };
 		5EF73AEA1AF161190058902D /* timelinecartaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF73AE91AF161190058902D /* timelinecartaTests.swift */; };
+		5EF73AFC1AF1955B0058902D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF73AFB1AF1955B0058902D /* TableViewController.swift */; };
+		5EF73AFE1AF197770058902D /* DescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF73AFD1AF197770058902D /* DescriptionItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,15 @@
 		5EF73ACE1AF161190058902D /* timelinecarta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timelinecarta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF73AD21AF161190058902D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EF73AD31AF161190058902D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5EF73AD51AF161190058902D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EF73AD81AF161190058902D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EF73ADA1AF161190058902D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5EF73ADD1AF161190058902D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5EF73AE31AF161190058902D /* timelinecartaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timelinecartaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF73AE81AF161190058902D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EF73AE91AF161190058902D /* timelinecartaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timelinecartaTests.swift; sourceTree = "<group>"; };
+		5EF73AFB1AF1955B0058902D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5EF73AFD1AF197770058902D /* DescriptionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionItem.swift; sourceTree = "<group>"; };
+		5EF73B011AF2460B0058902D /* Times.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = Times.dfont; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +80,9 @@
 		5EF73AD01AF161190058902D /* timelinecarta */ = {
 			isa = PBXGroup;
 			children = (
+				5EF73AFB1AF1955B0058902D /* TableViewController.swift */,
+				5EF73AFD1AF197770058902D /* DescriptionItem.swift */,
 				5EF73AD31AF161190058902D /* AppDelegate.swift */,
-				5EF73AD51AF161190058902D /* ViewController.swift */,
 				5EF73AD71AF161190058902D /* Main.storyboard */,
 				5EF73ADA1AF161190058902D /* Images.xcassets */,
 				5EF73ADC1AF161190058902D /* LaunchScreen.xib */,
@@ -90,6 +94,7 @@
 		5EF73AD11AF161190058902D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5EF73B011AF2460B0058902D /* Times.dfont */,
 				5EF73AD21AF161190058902D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +217,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EF73AD61AF161190058902D /* ViewController.swift in Sources */,
 				5EF73AD41AF161190058902D /* AppDelegate.swift in Sources */,
+				5EF73AFC1AF1955B0058902D /* TableViewController.swift in Sources */,
+				5EF73AFE1AF197770058902D /* DescriptionItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +417,7 @@
 				5EF73AEF1AF161190058902D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EF73AF01AF161190058902D /* Build configuration list for PBXNativeTarget "timelinecartaTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				5EF73AF21AF161190058902D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
