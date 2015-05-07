@@ -132,6 +132,8 @@ extension TableViewController: UITableViewDelegate {
 }
 
 
+// create a new class of the prototype cell and link the labels
+
 
 class SecondCell: UITableViewCell {
     @IBOutlet weak var detailsLabel: UILabel!
