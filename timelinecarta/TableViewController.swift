@@ -8,16 +8,24 @@
 
 import UIKit
 
+//  Create a Table View Controller in the storyboard, using prototype cells and link it to this swift file using a class
+
 class TableViewController: UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
+    
+    //  call array of content from description app file and then call it here as a variable
     
     var items: [descriptionItem] = descriptionItem.getMOC()
         
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
+        //  hide the nav bar when the user scrolls
+        
         
         navigationController?.hidesBarsOnSwipe = true
 
@@ -27,6 +35,10 @@ class TableViewController: UIViewController {
 }
 
 extension TableViewController: UITableViewDataSource {
+    
+    
+    //  create labels within the storyboard and call them within the cell row condition to fill the cells up with the arrays content
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -50,6 +62,9 @@ extension TableViewController: UITableViewDataSource {
     }
     
     
+    //set the number of sections in the table view controller
+    
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
@@ -69,9 +84,16 @@ extension TableViewController: UITableViewDataSource {
 
 extension TableViewController: UITableViewDelegate {
     
+    
+
+    
     func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
+    
+    
+    
+    // set a condition that if a cell is selected then it updates and expands
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -86,6 +108,9 @@ extension TableViewController: UITableViewDelegate {
             
         }
     }
+    
+    //  set the height of each cell as automatic according to the content within it, when the cell is selected then it will expand?
+    
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
