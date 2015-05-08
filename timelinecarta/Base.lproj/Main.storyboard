@@ -24,15 +24,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold" translatesAutoresizingMaskIntoConstraints="NO" id="4gB-Kf-H0Z" userLabel="sidebarImage">
-                                <rect key="frame" x="0.0" y="-166" width="320" height="900"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="2MX-zs-u3A">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="2MX-zs-u3A">
                                 <rect key="frame" x="30" y="0.0" width="320" height="700"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="700" id="vng-uQ-BvQ"/>
+                                </constraints>
                             </imageView>
-                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="190" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wET-Pk-25Z">
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="190" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wET-Pk-25Z">
                                 <rect key="frame" x="0.0" y="66" width="320" height="900"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="900" id="tNG-Ye-Gu0"/>
+                                </constraints>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SecondCell" rowHeight="240" id="pId-g8-F8M" customClass="SecondCell" customModule="timelinecarta" customModuleProvider="target">
@@ -69,7 +72,7 @@
                                                                 <constraint firstAttribute="height" constant="20" id="jQX-qC-aEv"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Times-Roman" family="Times" pointSize="15"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfR-iC-9ip" userLabel="Date">
@@ -137,8 +140,25 @@
                                     <outlet property="delegate" destination="1sK-7I-J7V" id="NSv-6O-BMC"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gold" translatesAutoresizingMaskIntoConstraints="NO" id="4gB-Kf-H0Z" userLabel="sidebarImage">
+                                <rect key="frame" x="0.0" y="-166" width="30" height="800"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="800" id="d3g-y0-CQy"/>
+                                    <constraint firstAttribute="width" constant="30" id="epY-x3-ANO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wET-Pk-25Z" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="2" id="5SR-xJ-yb0"/>
+                            <constraint firstItem="wET-Pk-25Z" firstAttribute="leading" secondItem="l0p-MK-dQH" secondAttribute="leading" id="91p-Wt-AC7"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4gB-Kf-H0Z" secondAttribute="bottom" constant="-66" id="NwD-Ht-NGg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2MX-zs-u3A" secondAttribute="trailing" constant="-46" id="W0o-69-VnH"/>
+                            <constraint firstItem="2MX-zs-u3A" firstAttribute="top" secondItem="l0p-MK-dQH" secondAttribute="top" id="lnC-8Q-FXU"/>
+                            <constraint firstItem="2MX-zs-u3A" firstAttribute="leading" secondItem="4gB-Kf-H0Z" secondAttribute="trailing" id="qKx-rL-GCh"/>
+                            <constraint firstItem="4gB-Kf-H0Z" firstAttribute="leading" secondItem="wET-Pk-25Z" secondAttribute="leading" id="wCq-Lc-aTl"/>
+                            <constraint firstAttribute="trailing" secondItem="wET-Pk-25Z" secondAttribute="trailing" id="y9h-BR-Kvl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Ya-zi-Fjx"/>
                     <connections>
@@ -170,7 +190,7 @@
     </scenes>
     <resources>
         <image name="backgroundImage" width="2856" height="4295"/>
-        <image name="gold" width="450" height="275"/>
+        <image name="gold" width="64" height="1280"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
