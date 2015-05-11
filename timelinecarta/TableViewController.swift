@@ -12,6 +12,12 @@ import UIKit
 
 class TableViewController: UIViewController {
 
+    @IBOutlet weak var popup: UIView!
+    
+    
+    @IBAction func closeButton(sender: AnyObject) {
+        popup.hidden = true
+    }
     
     @IBOutlet weak var tableView: UITableView!
     
