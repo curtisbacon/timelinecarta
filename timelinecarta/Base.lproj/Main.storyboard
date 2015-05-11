@@ -147,13 +147,33 @@
                                     <constraint firstAttribute="width" constant="30" id="epY-x3-ANO"/>
                                 </constraints>
                             </imageView>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BxG-ur-3Gw" userLabel="popup">
+                                <rect key="frame" x="6" y="72" width="308" height="488"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdS-0d-Umt">
+                                        <rect key="frame" x="0.0" y="8" width="24" height="16"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeButton:" destination="1sK-7I-J7V" eventType="touchUpInside" id="MR1-ix-ZzS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wET-Pk-25Z" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="2" id="5SR-xJ-yb0"/>
                             <constraint firstItem="wET-Pk-25Z" firstAttribute="leading" secondItem="l0p-MK-dQH" secondAttribute="leading" id="91p-Wt-AC7"/>
+                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="8" symbolic="YES" id="DKq-3s-JBl"/>
+                            <constraint firstItem="ERA-37-sXd" firstAttribute="top" secondItem="BxG-ur-3Gw" secondAttribute="bottom" constant="8" symbolic="YES" id="ENk-83-Y9v"/>
+                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="centerX" secondItem="wET-Pk-25Z" secondAttribute="centerX" id="EkG-NW-xQY"/>
                             <constraint firstAttribute="bottomMargin" secondItem="4gB-Kf-H0Z" secondAttribute="bottom" constant="-66" id="NwD-Ht-NGg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2MX-zs-u3A" secondAttribute="trailing" constant="-46" id="W0o-69-VnH"/>
+                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="leading" secondItem="l0p-MK-dQH" secondAttribute="leadingMargin" constant="-10" id="ewu-yz-Nzg"/>
                             <constraint firstItem="2MX-zs-u3A" firstAttribute="top" secondItem="l0p-MK-dQH" secondAttribute="top" id="lnC-8Q-FXU"/>
                             <constraint firstItem="2MX-zs-u3A" firstAttribute="leading" secondItem="4gB-Kf-H0Z" secondAttribute="trailing" id="qKx-rL-GCh"/>
                             <constraint firstItem="4gB-Kf-H0Z" firstAttribute="leading" secondItem="wET-Pk-25Z" secondAttribute="leading" id="wCq-Lc-aTl"/>
@@ -162,6 +182,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6Ya-zi-Fjx"/>
                     <connections>
+                        <outlet property="popup" destination="BxG-ur-3Gw" id="P9s-cw-gFG"/>
                         <outlet property="tableView" destination="wET-Pk-25Z" id="7Ef-Ql-ONm"/>
                     </connections>
                 </viewController>
