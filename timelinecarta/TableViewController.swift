@@ -14,9 +14,14 @@ class TableViewController: UIViewController {
 
     @IBOutlet weak var popup: UIView!
     
+    @IBOutlet weak var popupDetail: UILabel!
+    
+    @IBOutlet weak var ratImage: UIImageView!
     
     @IBAction func closeButton(sender: AnyObject) {
         popup.hidden = true
+        ratImage.hidden = true
+        popupDetail.hidden = true
     }
     
     @IBOutlet weak var tableView: UITableView!
@@ -24,11 +29,16 @@ class TableViewController: UIViewController {
     //  call array of content from description app file and then call it here as a variable
     
     var items: [descriptionItem] = descriptionItem.getMOC()
+    
+    
         
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        popupDetail.text = "Hi, \n I am the rat found in the mummified Skull of Sir William Longspee, here to help and provide some interesting facts. \n \n To navigate the timeline scroll up or down and tap the date for more information."
+        popupDetail.adjustsFontSizeToFitWidth = true
+
         
         //  hide the nav bar when the user scrolls
         
