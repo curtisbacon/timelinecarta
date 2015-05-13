@@ -9,6 +9,7 @@
             <string>Times-Roman</string>
             <string>Times-Roman</string>
             <string>Times-Roman</string>
+            <string>Times-Roman</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -31,11 +32,8 @@
                                 </constraints>
                             </imageView>
                             <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="190" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wET-Pk-25Z">
-                                <rect key="frame" x="0.0" y="66" width="320" height="900"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="500"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="900" id="tNG-Ye-Gu0"/>
-                                </constraints>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SecondCell" rowHeight="240" id="pId-g8-F8M" customClass="SecondCell" customModule="timelinecarta" customModuleProvider="target">
@@ -163,26 +161,46 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rat" translatesAutoresizingMaskIntoConstraints="NO" id="chf-Id-4zi">
+                                <rect key="frame" x="83" y="102" width="170" height="179"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocw-b6-Oli" userLabel="popupDetail">
+                                <rect key="frame" x="38" y="273" width="266" height="237"/>
+                                <fontDescription key="fontDescription" name="Times-Roman" family="Times" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wET-Pk-25Z" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="2" id="5SR-xJ-yb0"/>
-                            <constraint firstItem="wET-Pk-25Z" firstAttribute="leading" secondItem="l0p-MK-dQH" secondAttribute="leading" id="91p-Wt-AC7"/>
-                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="8" symbolic="YES" id="DKq-3s-JBl"/>
-                            <constraint firstItem="ERA-37-sXd" firstAttribute="top" secondItem="BxG-ur-3Gw" secondAttribute="bottom" constant="8" symbolic="YES" id="ENk-83-Y9v"/>
-                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="centerX" secondItem="wET-Pk-25Z" secondAttribute="centerX" id="EkG-NW-xQY"/>
+                            <constraint firstAttribute="trailing" secondItem="wET-Pk-25Z" secondAttribute="trailing" id="0dm-9q-K5D"/>
+                            <constraint firstItem="wET-Pk-25Z" firstAttribute="leading" secondItem="4gB-Kf-H0Z" secondAttribute="leading" id="Fc4-YU-hdK"/>
+                            <constraint firstItem="wET-Pk-25Z" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="2" id="FeU-tn-4Ow"/>
+                            <constraint firstItem="Ocw-b6-Oli" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="209" id="Fm2-E6-jtN"/>
+                            <constraint firstItem="chf-Id-4zi" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="38" id="Hur-jg-WoT"/>
+                            <constraint firstItem="ERA-37-sXd" firstAttribute="top" secondItem="Ocw-b6-Oli" secondAttribute="bottom" constant="58" id="MJN-D0-wYR"/>
+                            <constraint firstItem="ERA-37-sXd" firstAttribute="top" secondItem="chf-Id-4zi" secondAttribute="bottom" constant="287" id="NPh-BC-TIY"/>
                             <constraint firstAttribute="bottomMargin" secondItem="4gB-Kf-H0Z" secondAttribute="bottom" constant="-66" id="NwD-Ht-NGg"/>
+                            <constraint firstItem="Ocw-b6-Oli" firstAttribute="trailing" secondItem="l0p-MK-dQH" secondAttribute="trailingMargin" id="Rsl-uW-XKp"/>
+                            <constraint firstItem="chf-Id-4zi" firstAttribute="leading" secondItem="4gB-Kf-H0Z" secondAttribute="trailing" constant="53" id="U0P-0g-u0Z"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2MX-zs-u3A" secondAttribute="trailing" constant="-46" id="W0o-69-VnH"/>
-                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="leading" secondItem="l0p-MK-dQH" secondAttribute="leadingMargin" constant="-10" id="ewu-yz-Nzg"/>
+                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="centerX" secondItem="wET-Pk-25Z" secondAttribute="centerX" id="ZDE-Rv-PzS"/>
+                            <constraint firstItem="Ocw-b6-Oli" firstAttribute="leading" secondItem="4gB-Kf-H0Z" secondAttribute="trailing" constant="8" symbolic="YES" id="csS-sE-qMV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="chf-Id-4zi" secondAttribute="trailing" constant="51" id="hod-Cn-Er7"/>
+                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="leading" secondItem="l0p-MK-dQH" secondAttribute="leadingMargin" constant="-10" id="hq8-WH-JUH"/>
                             <constraint firstItem="2MX-zs-u3A" firstAttribute="top" secondItem="l0p-MK-dQH" secondAttribute="top" id="lnC-8Q-FXU"/>
+                            <constraint firstItem="ERA-37-sXd" firstAttribute="top" secondItem="BxG-ur-3Gw" secondAttribute="bottom" constant="8" symbolic="YES" id="poV-3h-UQU"/>
+                            <constraint firstItem="wET-Pk-25Z" firstAttribute="leading" secondItem="l0p-MK-dQH" secondAttribute="leading" id="qES-cv-CFf"/>
                             <constraint firstItem="2MX-zs-u3A" firstAttribute="leading" secondItem="4gB-Kf-H0Z" secondAttribute="trailing" id="qKx-rL-GCh"/>
-                            <constraint firstItem="4gB-Kf-H0Z" firstAttribute="leading" secondItem="wET-Pk-25Z" secondAttribute="leading" id="wCq-Lc-aTl"/>
-                            <constraint firstAttribute="trailing" secondItem="wET-Pk-25Z" secondAttribute="trailing" id="y9h-BR-Kvl"/>
+                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="centerY" secondItem="wET-Pk-25Z" secondAttribute="centerY" id="rwh-Bn-yZK"/>
+                            <constraint firstItem="BxG-ur-3Gw" firstAttribute="top" secondItem="aei-QU-4I9" secondAttribute="bottom" constant="8" symbolic="YES" id="xwC-8l-SvT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Ya-zi-Fjx"/>
                     <connections>
                         <outlet property="popup" destination="BxG-ur-3Gw" id="P9s-cw-gFG"/>
+                        <outlet property="popupDetail" destination="Ocw-b6-Oli" id="YGN-cw-CIB"/>
+                        <outlet property="ratImage" destination="chf-Id-4zi" id="BUa-So-li5"/>
                         <outlet property="tableView" destination="wET-Pk-25Z" id="7Ef-Ql-ONm"/>
                     </connections>
                 </viewController>
@@ -212,6 +230,7 @@
     <resources>
         <image name="backgroundImage" width="2856" height="4295"/>
         <image name="gold" width="64" height="1280"/>
+        <image name="rat" width="133" height="133"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
