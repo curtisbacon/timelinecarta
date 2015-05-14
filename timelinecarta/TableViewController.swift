@@ -195,7 +195,7 @@ extension TableViewController: UITableViewDelegate {
         case 1:
             let item = items[indexPath.row]
             if item.selected {
-                return UITableViewAutomaticDimension
+                return 500
             } else {
                 return 150.0
             }
