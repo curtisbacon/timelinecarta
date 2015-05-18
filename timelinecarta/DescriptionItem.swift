@@ -29,9 +29,12 @@ class descriptionItem: NSObject {
     
     class func getMOC() -> [descriptionItem] {
         var arr: [descriptionItem] = []
-        arr.append(descriptionItem(date: "1119", name: "Taxes, taxes, taxes", filename: "1199Taxes", title: "King John comes to the throne. His reign is characterised as being corrupt and despotic. His treasury becomes very wealthy."))
+        arr.append(descriptionItem(date: "1119", name: "Taxes, taxes, taxes", filename: "199Taxes.jpg", title: "King John comes to the throne. His reign is characterised as being corrupt and despotic. His treasury becomes very wealthy."))
         
         arr.append(descriptionItem(date: "1204", name: "John ‘Softsword’", filename: "1204Softsword.jpg", title: "A series of military defeats lead to John losing a lot of his territory in France. He is given an unfortunate nickname."))
+        
+        //No Image
+        arr.append(descriptionItem(date: "1200’s", name: "More Taxes’", filename: "-", title: "Less land means less money…. the solution: more taxes."))
         
         arr.append(descriptionItem(date: "1208-09", name: "On the Wrong Side of The Church", filename: "1208-09Pope.jpg", title: "King John interferes with church. As a result, the pope excommunicates him and punishes England by suspending most church activities."))
         
@@ -53,11 +56,11 @@ class descriptionItem: NSObject {
         //No Image
         arr.append(descriptionItem(date: "1217", name: "Too Windy, No Water", filename: "-", title: "Permission is requested to move the Cathedral at Old Sarum to a new site. Complaints about the old site are that it is too windy drowning out the sounds of chanting and causing frequent colds. The Real Reason. The cathedral is tired of being controlled by the garrison surrounding them at Old Sarum. They dream of freedom and prosperity."))
         
-        arr.append(descriptionItem(date: "1219", name: "“To Be Paid Without Quibbling or Fiddling”", filename: "1219ToBePaid.jpg", title: "The Cathedral clergy meet and agree that all will give a large part of their income for seven years to help build the new cathedral. (They vote on behalf of those absent as well!)"))
+        arr.append(descriptionItem(date: "1219", name: "“To Be Paid Without Quibbling or Fiddling”", filename: "1219”ToBePaid.jpg", title: "The Cathedral clergy meet and agree that all will give a large part of their income for seven years to help build the new cathedral. (They vote on behalf of those absent as well!)"))
         
-        arr.append(descriptionItem(date: "1219", name: "An Incomparable Artificer", filename: "1219Artificer.jpg", title: "Elias de Dereham, now renowned as a master project manager/builder is charged with leading the building of the new cathedral."))
+        arr.append(descriptionItem(date: "Around 1219", name: "An Incomparable Artificer", filename: "1219Artificer.jpg", title: "Elias de Dereham, now renowned as a master project manager/builder is charged with leading the building of the new cathedral."))
         
-        arr.append(descriptionItem(date: "1220", name: "The Oder of The Day", filename: "1220Cathedral.jpg", title: "The official laying of the foundation stones. The first stone is laid for the pope, the second for the archbishop of Canterbury, the third by the bishop, the fourth by William, Earl of Salisbury, the fifth by his wife…. etc. "))
+        arr.append(descriptionItem(date: "Around 1220", name: "The Oder of The Day", filename: "1220Cathedral.jpg", title: "The official laying of the foundation stones. The first stone is laid for the pope, the second for the archbishop of Canterbury, the third by the bishop, the fourth by William, Earl of Salisbury, the fifth by his wife…. etc. "))
         
         arr.append(descriptionItem(date: "1226", name: "Death of an Earl", filename: "1226Death.jpg", title: "William Longespee, Earl of Salisbury, dies. He is the first person to be buried in the Cathedral. His tomb shows him as a knight in his finest hour. "))
         
