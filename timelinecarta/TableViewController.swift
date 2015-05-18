@@ -139,6 +139,7 @@ extension TableViewController: UITableViewDataSource {
             cell.backgroundColor = UIColor.clearColor()
             cell.headingLabel.text = item.name
             cell.detailsLabel.text = item.title
+            cell.headingLabel.adjustsFontSizeToFitWidth = true
             cell.ImageView.image = UIImage(named: item.filename)
             return cell
         default:
