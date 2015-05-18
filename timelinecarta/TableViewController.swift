@@ -16,6 +16,7 @@ class TableViewController: UIViewController {
     
     @IBOutlet weak var popupDetail: UILabel!
     
+    @IBOutlet weak var ratFactBackground: UIView!
     @IBOutlet weak var ratImage: UIImageView!
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var ratLabel: UILabel!
@@ -26,16 +27,19 @@ class TableViewController: UIViewController {
         popup.hidden = true
         ratImage.hidden = true
         popupDetail.hidden = true
+        ratFactBackground.hidden = true
     }
     
     @IBAction func speechButton(sender: AnyObject) {
         speechBubble.hidden = true
         ratLabel.hidden = true
         speechButton.hidden = true
+        ratFactBackground.hidden = true
     }
     
     @IBAction func ratButton(sender: AnyObject) {
         ratLabel.hidden = false
+        ratFactBackground.hidden = false
         speechButton.hidden = false
         speechBubble.hidden = false
         currentFactIndex = (currentFactIndex+1)%facts.count
@@ -48,16 +52,24 @@ class TableViewController: UIViewController {
     //  call array of content from description app file and then call it here as a variable
     
     var facts = [
-        "Banging your head against a wall uses 150 calories an hour",
-        "An ostrich’s eye is bigger than its brain",
-        "The average lead pencil will draw a line 35 miles long",
-        "A piece of paper can be folded no more then 9 times",
-        "The king of hearts is the only king without a moustache",
-        "Every year about 98% of the atoms in your body are replaced",
-        "Cats can hear ultrasound",
-        "1 in 5,000 north Atlantic lobsters are born bright blue",
-        "1/3 of all tap water used for drinking in the USA is used to brew coffee",
-        "Cats sleep 16 to 18 hours per day"
+        "Four of the Magna Carta’s original clauses are still part of British law",
+        "The Magna Carta was valid for just 10 weeks",
+        "Salisbury cathedral has the oldest working clock in the world",
+        "Salisbury's clock is made of hand-wrought iron",
+        "When Longespee's tomb was opened in the 18th century, a mummified rat was found inside his skull",
+        "King John is often portrayed as the villain in the story of Robin Hood",
+        "The council of 25 barons that the Magna Carta formed eventually became the Parliament of England",
+        "A clause in the Magna Carta was the Barons had the right to watch over the King and seize his castle if he was to break his word",
+        "Before the Magna Carta was signed widows and daughters of Barons could be sold by the king for money",
+        "Despite signing the Magna Carta, King John continued doing as he pleased. This led to the Barons war between 1215-1217",
+        "Freedom of speech might not have been possible if the Magna Carta had not been signed",
+        "The Magna Carta was never actually signed but instead authenticated by the Royal Seal",
+        "There is not evidence to suggest King John could even write",
+        "Before the Magna Carta, the term Free people only referred to 25% of the population",
+        "The Magna Carta is made of pig skin and ducks beak",
+        "Salisbury Cathedral is home to the largest and oldest complete set of choir stalls in the country",
+        "The Cathedral's central sprire is the tallest in England it rises 404 feet tall and weighs 6400 tons.",
+        "The sprire's full climb is 332 steps",
     ]
       var currentFactIndex = 0
 
@@ -128,7 +140,6 @@ extension TableViewController: UITableViewDataSource {
             cell.headingLabel.text = item.name
             cell.detailsLabel.text = item.title
             cell.ImageView.image = UIImage(named: item.filename)
-            cell.ImageView.clipsToBounds = true
             return cell
         default:
             let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
@@ -136,7 +147,12 @@ extension TableViewController: UITableViewDataSource {
         }
     }
     
-    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.05,0.05,1)
+        UIView.animateWithDuration(0.25, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1,1,1)
+        })
+    }
     //set the number of sections in the table view controller
     
     
@@ -190,12 +206,16 @@ extension TableViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
         switch indexPath.section {
-        case 0:
-            return UITableViewAutomaticDimension
+       
         case 1:
             let item = items[indexPath.row]
             if item.selected {
-                return 500
+                if item.filename == "-" {
+                    return 350
+                } else {
+                    return 500
+                }
+            
             } else {
                 return 150.0
             }
