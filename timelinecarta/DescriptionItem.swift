@@ -33,19 +33,19 @@ class descriptionItem: NSObject {
         
         arr.append(descriptionItem(date: "1204", name: "John ‘Softsword’", filename: "1204Softsword.jpg", title: "A series of military defeats lead to John losing a lot of his territory in France. He is given an unfortunate nickname."))
         
-        arr.append(descriptionItem(date: "1208-09", name: "On the Wrong Side of The Church", filename: "1208-09Pope.jpg", title: "King John interferes with church. As a result, the pope excommunicates him and punishes England by suspending most church activities."))
+        arr.append(descriptionItem(date: "1208-09", name: "On the Wrong Side \n of The Church", filename: "1208-09Pope.jpg", title: "King John interferes with church. As a result, the pope excommunicates him and punishes England by suspending most church activities."))
         
         //No Image
         arr.append(descriptionItem(date: "1213", name: "Royal Submission", filename: "-", title: "The king finally submits to the pope, accepting him as overlord. \n He agrees to pay the pope 1000 marks a year to rule England!"))
         
-        arr.append(descriptionItem(date: "1214 - 15", name: "Breaking Ties", filename: "1214-15London.jpg", title: "Following further military defeats in France, the king’s baron’s get fed up with him and rebel against his reign. They take London."))
+        arr.append(descriptionItem(date: "1214-15", name: "Breaking Ties", filename: "1214-15London.jpg", title: "Following further military defeats in France, the king’s baron’s get fed up with him and rebel against his reign. They take London."))
         
         //No image
         arr.append(descriptionItem(date: "1215", name: "Making Demands", filename: "-", title: "The Archbishop of Canterbury mediates between the barons and the king. The barons come up with a wish list: The Articles of the Barons."))
         
-        arr.append(descriptionItem(date: "15 June 1215", name: "The Signing", filename: "1215TheSigning.jpg", title: "The king is angry but has to agree. He has no choice. He concedes. Magna Carta is issued. "))
+        arr.append(descriptionItem(date: "1215", name: "The Signing", filename: "1215TheSigning.jpg", title: "On the 15th June the king is angry but has to agree. He has no choice. He concedes. Magna Carta is issued. "))
         
-        arr.append(descriptionItem(date: "July 1215", name: "Spreading the Word", filename: "1215SpreadingTheWord.jpg", title: "The archbishop gets his steward to distribute Magna Carta around the kingdom. He’s a priest by the name of Elias de Dereham."))
+        arr.append(descriptionItem(date: "1215", name: "Spreading the Word", filename: "1215SpreadingTheWord.jpg", title: " During the month of July the archbishop gets his steward to distribute Magna Carta around the kingdom. He’s a priest by the name of Elias de Dereham."))
         
         //No Image
         arr.append(descriptionItem(date: "1215", name: "Who Took It?", filename: "-", title: "A copy of Magna Carta is taken to old Sarum, Salisbury’s predecessor Cathedral. We’re not sure if  the earl of Salisbury, William Longespee who took it there, or Elias himself."))
@@ -57,7 +57,7 @@ class descriptionItem: NSObject {
         
         arr.append(descriptionItem(date: "1219", name: "An Incomparable Artificer", filename: "1219Artificer.jpg", title: "Elias de Dereham, now renowned as a master project manager/builder is charged with leading the building of the new cathedral."))
         
-        arr.append(descriptionItem(date: "1220", name: "The Oder of The Day", filename: "1220Cathedral.jpg", title: "The official laying of the foundation stones. The first stone is laid for the pope, the second for the archbishop of Canterbury, the third by the bishop, the fourth by William, Earl of Salisbury, the fifth by his wife…. etc. "))
+        arr.append(descriptionItem(date: "1220", name: "The Order of The Day", filename: "1220Cathedral.jpg", title: "The official laying of the foundation stones. The first stone is laid for the pope, the second for the archbishop of Canterbury, the third by the bishop, the fourth by William, Earl of Salisbury, the fifth by his wife…. etc. "))
         
         arr.append(descriptionItem(date: "1226", name: "Death of an Earl", filename: "1226Death.jpg", title: "William Longespee, Earl of Salisbury, dies. He is the first person to be buried in the Cathedral. His tomb shows him as a knight in his finest hour. "))
         
