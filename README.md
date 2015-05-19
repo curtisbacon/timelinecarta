@@ -1,6 +1,6 @@
 # ${1:timelinecarta application}
 
-Project for a timeline application for the Magna Carta exhibition
+Project for a timeline application for the Magna Carta exhibition, consisting of important events in the history of the Magna Carta itself. 
 
 ## Installation
 
@@ -9,7 +9,7 @@ Project for a timeline application for the Magna Carta exhibition
 
 ## Usage
 
-Usage only for the Magna Carta exhibition 2015
+Usage only for the Salisbury Magna Carta exhibition 2015
 
 ## Credits
 
