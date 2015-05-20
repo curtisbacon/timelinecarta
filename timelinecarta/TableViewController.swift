@@ -52,24 +52,25 @@ class TableViewController: UIViewController {
     //  call array of content from description app file and then call it here as a variable
     
     var facts = [
-        "Four of the Magna Carta’s original clauses are still part of British law",
+        "Four of the Magna Carta’s original clauses are still part of British law.",
         "The Magna Carta was valid for just 10 weeks",
-        "Salisbury cathedral has the oldest working clock in the world",
-        "Salisbury's clock is made of hand-wrought iron",
-        "When Longespee's tomb was opened in the 18th century, a mummified rat was found inside his skull",
-        "King John is often portrayed as the villain in the story of Robin Hood",
-        "The council of 25 barons that the Magna Carta formed eventually became the Parliament of England",
-        "A clause in the Magna Carta was the Barons had the right to watch over the King and seize his castle if he was to break his word",
-        "Before the Magna Carta was signed widows and daughters of Barons could be sold by the king for money",
-        "Despite signing the Magna Carta, King John continued doing as he pleased. This led to the Barons war between 1215-1217",
-        "Freedom of speech might not have been possible if the Magna Carta had not been signed",
-        "The Magna Carta was never actually signed but instead authenticated by the Royal Seal",
-        "There is not evidence to suggest King John could even write",
-        "Before the Magna Carta, the term Free people only referred to 25% of the population",
+        "Salisbury cathedral has the oldest working clock in the world.",
+        "Salisbury's clock is made of hand-wrought iron.",
+        "When Longespee's tomb was opened in the 18th century, a mummified rat was found inside his skull.",
+        "King John is often portrayed as the villain in the story of Robin Hood.",
+        "The council of 25 barons that the Magna Carta formed eventually became the Parliament of England.",
+        "A clause in the Magna Carta was the Barons had the right to watch over the King and seize his castle if he was to break his word.",
+        "Before the Magna Carta was signed widows and daughters of Barons could be sold by the king for money.",
+        "Despite signing the Magna Carta, King John continued doing as he pleased. Getting the Pope to annul Magna Carta. This led to the Barons war between 1215-1217.",
+        "Freedom of speech might not have been possible if the Magna Carta had not been signed.",
+        "The Magna Carta was never actually signed but instead authenticated by the Royal Seal.",
+        "There is not evidence to suggest King John could even write.",
+        "Back then the term 'Free Men' to whom Magna Carta applied only referred to around 25% of the population.",
+        "The new baptismal font (2008), designed by William Pye is shaped like a Greek cross and large enough for total immersion baptism.",
         "The Magna Carta is made of pig skin and ducks beak",
-        "Salisbury Cathedral is home to the largest and oldest complete set of choir stalls in the country",
-        "The Cathedral's central sprire is the tallest in England it rises 404 feet tall and weighs 6400 tons.",
-        "The sprire's full climb is 332 steps",
+        "Salisbury Cathedral is home to the largest and oldest complete set of choir stalls in the country, made in 1236 from oak provided by King Henry III.",
+        "The Cathedral's central sprire is the tallest in England it rises 404 feet tall and weighs 6,400 tons.",
+        "The sprire's full climb is 332 steps.",
     ]
       var currentFactIndex = 0
 
@@ -212,9 +213,9 @@ extension TableViewController: UITableViewDelegate {
             let item = items[indexPath.row]
             if item.selected {
                 if item.filename == "-" {
-                    return 350
+                    return UITableViewAutomaticDimension
                 } else {
-                    return 500
+                    return 580
                 }
             
             } else {
